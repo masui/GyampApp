@@ -7,12 +7,6 @@
 
 # IBでこのクラスをFile's Ownerのdelegateに指定しておく
 
-
-#  [myWindow makeFirstResponder:myControl];
-
-# メニューの中のTextFieldにフォーカスがあたるようにする方法
-# http://www.cocoabuilder.com/archive/cocoa/195835-set-focus-on-nsview-in-an-nsmenuitem.html
-
 class Gyamp
   attr_accessor :statusView
   attr_accessor :queryView

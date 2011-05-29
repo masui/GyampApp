@@ -37,16 +37,17 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 328354225;
-			PBXWorkspaceStateSaveDate = 328354225;
+			PBXPerProjectTemplateStateSaveDate = 328364915;
+			PBXWorkspaceStateSaveDate = 328364915;
 		};
 		perUserProjectItems = {
+			CE3267091392737B00A04AA9 /* PBXTextBookmark */ = CE3267091392737B00A04AA9 /* PBXTextBookmark */;
 			CE490CC5139131F100FF5391 = CE490CC5139131F100FF5391 /* PlistBookmark */;
 			CE5874B513911EE800CA3527 = CE5874B513911EE800CA3527 /* PBXTextBookmark */;
 			CE6EBA97139248A900077AB5 = CE6EBA97139248A900077AB5 /* PBXTextBookmark */;
 			CE6EBA98139248A900077AB5 = CE6EBA98139248A900077AB5 /* PBXTextBookmark */;
 			CE6EBAA9139249AA00077AB5 = CE6EBAA9139249AA00077AB5 /* PBXTextBookmark */;
-			CECE8C4B139249B7007D4629 /* PBXTextBookmark */ = CECE8C4B139249B7007D4629 /* PBXTextBookmark */;
+			CECE8C4B139249B7007D4629 = CECE8C4B139249B7007D4629 /* PBXTextBookmark */;
 			CEDDD6311391D91E00829E9B = CEDDD6311391D91E00829E9B /* PBXBookmark */;
 			CEDDD68C1391EBDF00829E9B = CEDDD68C1391EBDF00829E9B /* PBXBookmark */;
 		};
@@ -65,6 +66,16 @@
 		executables = (
 			CE5873751390EA8F00CA3527 /* GyampApp */,
 		);
+	};
+	CE3267091392737B00A04AA9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CE6EBA95139248A200077AB5 /* QueryWindow.rb */;
+		name = "QueryWindow.rb: 19";
+		rLen = 0;
+		rLoc = 610;
+		rType = 0;
+		vrLen = 201;
+		vrLoc = 24;
 	};
 	CE490CAA13912C5C00FF5391 /* StatusView.rb */ = {
 		uiCtxt = {
@@ -150,7 +161,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1314, 255}}";
 			sepNavSelRange = "{610, 0}";
-			sepNavVisRange = "{24, 227}";
+			sepNavVisRange = "{24, 201}";
 		};
 	};
 	CE6EBA97139248A900077AB5 /* PBXTextBookmark */ = {
