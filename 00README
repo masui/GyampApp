@@ -1,0 +1,7 @@
+NSStatusBarに設定したViewをクリックしたときメニューが出るようにするには
+以下のような細工が必要
+http://undefinedvalue.com/2009/07/07/adding-custom-view-nsstatusitem
+
+メニュー項目に設定したViewにフォーカスがあたるようにするには
+さらに以下のような工夫が必要らしい
+http://www.cocoabuilder.com/archive/cocoa/195835-set-focus-on-nsview-in-an-nsmenuitem.html
