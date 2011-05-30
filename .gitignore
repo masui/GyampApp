@@ -2,3 +2,6 @@
 *.o
 build
 .DS_Store
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+

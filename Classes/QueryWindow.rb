@@ -15,4 +15,9 @@ class QueryWindow < NSWindow
   def canBecomeKeyWindow
     return true
   end
+
+  def resignKeyWindow
+    puts "resignKeyWindow"
+  end
+
 end
