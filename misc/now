@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
+#
+# 「なう」コマンド
+#
+#   - Gyampを設定する
+#
+
+place = ARGV.shift
+unless place then
+  STDERR.puts "Usage: % now place"
+  STDERR.puts "places should be listed in ~/.now"
+  exit
+end
+
+configfile = File.expand_path("~/.now")
+logfile = File.expand_path("~/.nowlog")
+
+File.open(logfile,"a"){ |f|
+  host = `hostname`.chomp!
+  f.puts "#{Time.now.strftime('%Y/%m/%d %H:%M:%S')} #{place} #{host}"
+}
+
+title = "Gyamp"
+accounts = ['Gyamp']
+if File.exist?(configfile) then
+  load configfile
+  if $config[place] then
+    title = $config[place][:title]
+    accounts = $config[place][:accounts]
+  elsif $config['.default'] then
+    title = $config['.default'][:title]
+    accounts = $config['.default'][:accounts]
+  end
+end
+
+puts "open /Users/masui/GyampApp/build/Debug/GyampApp.app --args '#{title}' #{accounts.join(' ')}"
+system "killall GyampApp"
+system "open /Users/masui/GyampApp/build/Debug/GyampApp.app --args '#{title}' #{accounts.join(' ')}"
+
+
+
