@@ -19,6 +19,8 @@
 
  ![](http://gyazo.com/0b647639e5c3debba2b908cc6d03e03b.png)
 
+ * ~/.now に設定ファイルを書くことができます。サンプルがmisc/dot.now.sampleにあります。
+
 
 ## TODO
 

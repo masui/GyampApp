@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+#
+# 「なうコマンド」の設定ファイル
+#
+# % now home ==> GyampApp.app --args Home masui
+#
+$config = {
+  '.default' => {
+    :title => 'Gyamp',
+    :accounts => ['masui']
+  },
+  'home' => {
+    :title => 'Home',
+    :accounts => ['masui']
+  },
+  'delta' => {
+    :title => 'Delta',
+    :accounts => ['mlab', 'masui']
+  },
+  'delta_' => {
+    # フェイク
+    :title => 'Delta',
+    :accounts => ['mlab', 'masui']
+  },
+  'moving' => {
+    :title => 'Delta',
+    :accounts => ['masui']
+  },
+  'writing' => {
+    :title => 'Delta',
+    :accounts => ['masui'],
+    :action => nil
+  },
+}
+
