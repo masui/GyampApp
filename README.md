@@ -15,6 +15,9 @@
 
  ![](http://gyazo.com/d1da03f23e386d4fd939ec5f09620e4f.png)
 
+ * クリックするとこのように文字入力画面が表示されます
+
+ ![](http://gyazo.com/0b647639e5c3debba2b908cc6d03e03b.png)
 
 
 ## TODO
