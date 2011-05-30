@@ -1,8 +1,13 @@
 # GyampApp
 
- * Web上のブックマークシステム[Gyamp](http://Gyamp.com/)をMacで使うアプリケーションです
- * Mac画面の上のメニューバー(正式名称はステータスバー)に常駐し、ブックマークにジャンプします
- * 「なうコマンド」で使えるようになっています
+ * Web上のブックマークシステム[Gyamp](http://Gyamp.com/)をMacで使うアプリケーションです。
+ * Mac画面の上のメニューバー(NSStatusBar)に常駐し、キーワードを入力するとブックマークしたページにジャンプします。
+ * [なうコマンド](https://github.com/masui/GyampApp/blob/master/misc/now)で使えるようになっています。
+
+## Gyampについて
+
+ * Gyampは[TinyURL](http://tinyurl.com/)や[bit.ly](http://bit.ly/)のような短縮URLサービスですが、
+   自分が決めたURLを利用できるという特徴を持っています。
 
 ## インストール
 
