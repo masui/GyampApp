@@ -9,10 +9,9 @@
 
 class Gyamp
   attr_accessor :statusView
+  attr_accessor :statusBarTitle
   attr_accessor :queryView
   attr_accessor :queryWindow
-  attr_accessor :textField
-  attr_accessor :gyaimLabel
   attr_reader :statusItem
   attr_reader :visible
 
@@ -21,8 +20,16 @@ class Gyamp
 
   # IBデータを読み込んだ後で呼ばれる
   def awakeFromNib
+    # open GyampApp.app --args masui のように起動
+    @gyampUser = 'now'
+    @gyampUser = ARGV[0] if ARGV[0]
+    @gyampTitle = 'Gyamp!'
+    @gyampTitle = ARGV[1] if ARGV[1]
+    @statusBarTitle.setStringValue(@gyampTitle)
+
     systemStatusBar = NSStatusBar.systemStatusBar
     @statusItem = systemStatusBar.statusItemWithLength(NSVariableStatusItemLength)
+    # @statusItem = systemStatusBar.statusItemWithLength(@statusBarTitle.frame.size.width)
     @statusItem.setHighlightMode(true)
 
     # @statusItem.setTitle("Gyamp!!")
@@ -75,7 +82,6 @@ class Gyamp
 
 #    @@xxx = @statusItem # for preventing GC
 
-#    @gyaimLabel.setStringValue("xxx")
   end
 
   def showQueryView
@@ -94,7 +100,7 @@ class Gyamp
 
   def query(sender)
     if @visible then
-      url = "http://masui.3memo.com/"+sender.stringValue
+      url = "http://#{@gyampUser}.3memo.com/"+sender.stringValue
       system "open #{url}"
       hideQueryView
       @statusView.setNeedsDisplay(true) # Highlightを中止

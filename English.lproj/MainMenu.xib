@@ -13,8 +13,8 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="480"/>
+			<integer value="464"/>
 			<integer value="407"/>
-			<integer value="463"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -110,7 +110,7 @@
 					<object class="NSTextField" id="125852916">
 						<reference key="NSNextResponder" ref="685929403"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{8, 7}, {143, 22}}</string>
+						<string key="NSFrame">{{7, 5}, {150, 22}}</string>
 						<reference key="NSSuperview" ref="685929403"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSTextFieldCell" key="NSCell" id="352610133">
@@ -124,6 +124,7 @@
 							</object>
 							<reference key="NSControlView" ref="125852916"/>
 							<bool key="NSDrawsBackground">YES</bool>
+							<int key="NSTextBezelStyle">1</int>
 							<object class="NSColor" key="NSBackgroundColor">
 								<int key="NSColorSpace">6</int>
 								<string key="NSCatalogName">System</string>
@@ -142,7 +143,7 @@
 						</object>
 					</object>
 				</object>
-				<string key="NSFrameSize">{164, 34}</string>
+				<string key="NSFrameSize">{164, 32}</string>
 				<reference key="NSSuperview"/>
 				<string key="NSClassName">NSView</string>
 			</object>
@@ -191,14 +192,6 @@
 					<int key="connectionID">474</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">textField</string>
-						<reference key="source" ref="678991567"/>
-						<reference key="destination" ref="125852916"/>
-					</object>
-					<int key="connectionID">487</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">query:</string>
 						<reference key="source" ref="678991567"/>
@@ -208,19 +201,19 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">gyaimLabel</string>
-						<reference key="source" ref="678991567"/>
-						<reference key="destination" ref="998608360"/>
-					</object>
-					<int key="connectionID">489</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">statusBarTitle</string>
 						<reference key="source" ref="376451344"/>
 						<reference key="destination" ref="998608360"/>
 					</object>
 					<int key="connectionID">490</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">statusBarTitle</string>
+						<reference key="source" ref="678991567"/>
+						<reference key="destination" ref="998608360"/>
+					</object>
+					<int key="connectionID">493</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -370,7 +363,7 @@
 					<string>{{336, 645}, {310, 40}}</string>
 					<boolean value="NO"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{335, 719}, {164, 34}}</string>
+					<string>{{335, 723}, {164, 32}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<object class="NSMutableDictionary">
@@ -399,7 +392,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">490</int>
+			<int key="maxID">493</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -422,15 +415,13 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>gyaimLabel</string>
 							<string>queryView</string>
 							<string>queryWindow</string>
+							<string>statusBarTitle</string>
 							<string>statusView</string>
-							<string>textField</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -441,18 +432,13 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>gyaimLabel</string>
 							<string>queryView</string>
 							<string>queryWindow</string>
+							<string>statusBarTitle</string>
 							<string>statusView</string>
-							<string>textField</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBToOneOutletInfo">
-								<string key="name">gyaimLabel</string>
-								<string key="candidateClassName">id</string>
-							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">queryView</string>
 								<string key="candidateClassName">id</string>
@@ -462,11 +448,11 @@
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBToOneOutletInfo">
-								<string key="name">statusView</string>
+								<string key="name">statusBarTitle</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBToOneOutletInfo">
-								<string key="name">textField</string>
+								<string key="name">statusView</string>
 								<string key="candidateClassName">id</string>
 							</object>
 						</object>
