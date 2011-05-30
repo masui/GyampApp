@@ -7,12 +7,11 @@
 
 class StatusView < NSView
   attr_accessor :app
+  attr_accessor :statusBarTitle
 
   def initWithFrame(rect)
     # http://d.hatena.ne.jp/swallow_life/20090614
-    if super then # [super initWithFrame(rect)] のかわりらしい
-#      @visible = false
-    end
+    super # [super initWithFrame(rect)] のかわりらしい
     self
   end
 
@@ -30,6 +29,7 @@ class StatusView < NSView
   end
 
   def drawRect(rect)
+    @statusBarTitle.setTextColor(@app.visible ? NSColor.whiteColor : NSColor.blackColor)
     @app.statusItem.drawStatusBarBackgroundInRect(self.bounds,withHighlight:@app.visible)
   end
 end

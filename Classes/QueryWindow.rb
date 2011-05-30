@@ -16,6 +16,10 @@ class QueryWindow < NSWindow
     return true
   end
 
+  #
+  # このあたりを使ってメニューウィンドウを消すことができるかもしれないと聞いたが
+  # よくわからない...
+  #
   def resignKeyWindow
     puts "resignKeyWindow"
   end
