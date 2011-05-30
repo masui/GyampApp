@@ -7,6 +7,8 @@
 
 # IBでこのクラスをFile's Ownerのdelegateに指定しておく
 
+require 'net/http'
+
 class Gyamp
   attr_accessor :statusView
   attr_accessor :statusBarTitle
@@ -20,13 +22,16 @@ class Gyamp
 
   # IBデータを読み込んだ後で呼ばれる
   def awakeFromNib
-    # open GyampApp.app --args masui のように起動
-    @gyampUser = 'now'
-    @gyampUser = ARGV[0] if ARGV[0]
+    # open GyampApp.app --args Delta mlab masui のように起動
     @gyampTitle = 'Gyamp!'
-    @gyampTitle = ARGV[1] if ARGV[1]
+    @gyampTitle = ARGV.shift if ARGV[0]
+    @gyampAccounts = ['now']
+    @gyampAccounts = ARGV.dup if ARGV.length > 0
     @statusBarTitle.setStringValue(@gyampTitle)
 
+    #
+    # ステータスバーの設定
+    #
     systemStatusBar = NSStatusBar.systemStatusBar
     @statusItem = systemStatusBar.statusItemWithLength(NSVariableStatusItemLength)
     # @statusItem = systemStatusBar.statusItemWithLength(@statusBarTitle.frame.size.width)
@@ -98,9 +103,28 @@ class Gyamp
     @queryWindow.orderOut(self) # Windowを隠す
   end
 
-  def query(sender)
+  def dest(keyword,accounts)
+    res = nil
+    accounts.each { |account|
+      Net::HTTP.start('gyamp.com', 80) {|http|
+        response = http.get("/#{account}/#{keyword}")
+        location = response['location']
+        res = location unless location =~ /google/
+      }
+      break if res
+    }
+    return res
+  end
+
+  def execute(sender)
     if @visible then
-      url = "http://#{@gyampUser}.3memo.com/"+sender.stringValue
+      keyword = sender.stringValue
+      if keyword =~ /!$/ then
+        url = "http://gyamp.com/#{@gyampAccounts[0]}/#{keyword}"
+      else
+        url = dest(keyword,@gyampAccounts)
+        url = "http://google.co.jp/search?q=#{keyword}" unless url
+      end
       system "open #{url}"
       hideQueryView
       @statusView.setNeedsDisplay(true) # Highlightを中止

@@ -29,7 +29,7 @@ class StatusView < NSView
   end
 
   def drawRect(rect)
-    @statusBarTitle.setTextColor(@app.visible ? NSColor.whiteColor : NSColor.blackColor)
+    @statusBarTitle.setTextColor(@app.visible ? NSColor.whiteColor : NSColor.brownColor)
     @app.statusItem.drawStatusBarBackgroundInRect(self.bounds,withHighlight:@app.visible)
   end
 end

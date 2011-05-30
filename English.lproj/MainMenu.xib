@@ -46,7 +46,7 @@
 					<object class="NSTextField" id="998608360">
 						<reference key="NSNextResponder" ref="376451344"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{3, 1}, {57, 18}}</string>
+						<string key="NSFrame">{{3, 5}, {74, 19}}</string>
 						<reference key="NSSuperview" ref="376451344"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSTextFieldCell" key="NSCell" id="592757326">
@@ -54,8 +54,8 @@
 							<int key="NSCellFlags2">272630784</int>
 							<string key="NSContents">Gyamp!</string>
 							<object class="NSFont" key="NSSupport">
-								<string key="NSName">Helvetica-Bold</string>
-								<double key="NSSize">14</double>
+								<string key="NSName">HiraKakuProN-W6</string>
+								<double key="NSSize">16</double>
 								<int key="NSfFlags">16</int>
 							</object>
 							<reference key="NSControlView" ref="998608360"/>
@@ -80,7 +80,7 @@
 						</object>
 					</object>
 				</object>
-				<string key="NSFrameSize">{60, 20}</string>
+				<string key="NSFrameSize">{76, 25}</string>
 				<reference key="NSSuperview"/>
 				<string key="NSClassName">StatusView</string>
 			</object>
@@ -192,14 +192,6 @@
 					<int key="connectionID">474</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">query:</string>
-						<reference key="source" ref="678991567"/>
-						<reference key="destination" ref="352610133"/>
-					</object>
-					<int key="connectionID">488</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">statusBarTitle</string>
 						<reference key="source" ref="376451344"/>
@@ -214,6 +206,14 @@
 						<reference key="destination" ref="998608360"/>
 					</object>
 					<int key="connectionID">493</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">execute:</string>
+						<reference key="source" ref="678991567"/>
+						<reference key="destination" ref="352610133"/>
+					</object>
+					<int key="connectionID">494</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -346,7 +346,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{353, 375}, {60, 20}}</string>
+					<string>{{353, 370}, {76, 25}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<object class="NSAffineTransform"/>
 					<real value="0.0"/>
@@ -392,7 +392,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">493</int>
+			<int key="maxID">494</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -401,13 +401,13 @@
 					<string key="className">Gyamp</string>
 					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">query:</string>
+						<string key="NS.key.0">execute:</string>
 						<string key="NS.object.0">id</string>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">query:</string>
+						<string key="NS.key.0">execute:</string>
 						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">query:</string>
+							<string key="name">execute:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</object>
