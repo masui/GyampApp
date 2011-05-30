@@ -1,13 +1,16 @@
 # GyampApp
 
  * Web上のブックマークシステム[Gyamp](http://Gyamp.com/)をMacで使うアプリケーションです。
- * Mac画面の上のメニューバー(NSStatusBar)に常駐し、キーワードを入力するとブックマークしたページにジャンプします。
- * [なうコマンド](https://github.com/masui/GyampApp/blob/master/misc/now)で使えるようになっています。
+ * Macのデスクトップ画面の上のメニューバー(NSStatusBar)に常駐し、
+   キーワードを入力することによって自分がブックマークしたページにジャンプします。
+ * [なうコマンド](https://github.com/masui/GyampApp/blob/master/misc/now)と併用できます。
 
 ## Gyampについて
 
  * Gyampは[TinyURL](http://tinyurl.com/)や[bit.ly](http://bit.ly/)のような短縮URLサービスですが、
    自分が決めたURLを利用できるという特徴を持っています。
+ * 例えば、このような[長いURL](http://maps.google.co.jp/?ie=UTF8&hq=&hnear=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%B8%8B%E8%B0%B7%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%93%E2%88%92%EF%BC%97&ll=35.659897,139.703578&spn=0.008944,0.014205&z=16&brcurrent=3,0x60188b5866d5affb:0xfea3e6b96012bdb0,1,0x60188b5866860611:0x4c9287e50043b1c)を
+   [http://Gyamp.com/gyamp/map](http://Gyamp.com/gyamp/map)という名前で登録することができます。
 
 ## インストール
 
