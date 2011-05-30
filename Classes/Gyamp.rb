@@ -23,9 +23,9 @@ class Gyamp
   # IBデータを読み込んだ後で呼ばれる
   def awakeFromNib
     # open GyampApp.app --args Delta mlab masui のように起動
-    @gyampTitle = 'Gyamp!'
+    @gyampTitle = 'Gyamp'
     @gyampTitle = ARGV.shift if ARGV[0]
-    @gyampAccounts = ['now']
+    @gyampAccounts = ['gyamp']
     @gyampAccounts = ARGV.dup if ARGV.length > 0
     @statusBarTitle.setStringValue(@gyampTitle)
 
@@ -109,7 +109,7 @@ class Gyamp
       Net::HTTP.start('gyamp.com', 80) {|http|
         response = http.get("/#{account}/#{keyword}")
         location = response['location']
-        res = location unless location =~ /google/
+        res = location unless location =~ /google.*search/
       }
       break if res
     }

@@ -21,7 +21,7 @@ class QueryWindow < NSWindow
   # よくわからない...
   #
   def resignKeyWindow
-    puts "resignKeyWindow"
+    # puts "resignKeyWindow"
   end
 
 end
