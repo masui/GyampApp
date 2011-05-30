@@ -7,8 +7,15 @@
 ## インストール
 
  * [MacRuby](http://www.macruby.org/)のインストールが必要です
+ * XCode3でビルドして下さい
 
 ## 使いかた
+
+ * 起動するとMacデスクトップの上部にこういうものが表示されます
+
+!(http://gyazo.com/d1da03f23e386d4fd939ec5f09620e4f.png)
+
+
 
 ## TODO
 
