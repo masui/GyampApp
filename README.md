@@ -11,3 +11,5 @@
 ## 使いかた
 
 ## TODO
+
+![画像を表示できません](http://gyazo.com/6f3ca6b011d02daf88e9ddee180d72b0.png "画像テスト")
