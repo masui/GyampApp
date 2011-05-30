@@ -13,7 +13,7 @@
 
  * 起動するとMacデスクトップの上部にこういうものが表示されます
 
-    (http://gyazo.com/d1da03f23e386d4fd939ec5f09620e4f.png)
+    ![](http://gyazo.com/d1da03f23e386d4fd939ec5f09620e4f.png)
 
  * クリックするとこのように文字入力画面が表示されます
 
